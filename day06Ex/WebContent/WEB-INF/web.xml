@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>day06Ex</display-name>
+  <servlet>
+  	<servlet-name>marvelList</servlet-name>
+  	<servlet-class>day06Ex.marvel.MovieController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>marvelInsert</servlet-name>
+  	<servlet-class>day06Ex.marvel.MovieInsertController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>marvelUpdate</servlet-name>
+  	<servlet-class>day06Ex.marvel.MovieUpdateController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>marvelDelete</servlet-name>
+  	<servlet-class>day06Ex.marvel.MovieDeleteController</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>marvelList</servlet-name>
+  	<url-pattern>/movielist.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>marvelInsert</servlet-name>
+  	<url-pattern>/insert.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>marvelUpdate</servlet-name>
+  	<url-pattern>/update.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>marvelDelete</servlet-name>
+  	<url-pattern>/delete.jsp</url-pattern>
+  </servlet-mapping>
+</web-app>
